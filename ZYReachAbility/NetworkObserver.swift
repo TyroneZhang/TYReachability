@@ -15,7 +15,7 @@ class NetworkObserver: NSObject, SimplePingDelegate {
     typealias handler = (isNetworkAvailable: Bool) -> Void
     private var pinger: SimplePing?
     private var reachability: Reachability!
-    private let hostName = "scghxy.gnway.cc"
+    private let hostName = "192.168.3.10"
     private var handlers: [handler] = []
     
     deinit {
@@ -80,17 +80,25 @@ class NetworkObserver: NSObject, SimplePingDelegate {
             self.pinger = SimplePing(hostName: self.hostName)
             self.pinger!.delegate = self
             self.pinger!.start()
+            weak var weakSelf = self
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
+                weakSelf?.pingFailed()
+            })
         }
     }
     
     private func pingFailed() {
-            self.handleAllPingResultHandlers(false)
-            NSNotificationCenter.defaultCenter().postNotificationName(kRealReachabilityStatusChanged, object: NSNumber(bool: false))
+        self.pinger!.stop()
+        self.pinger = nil
+        self.handleAllPingResultHandlers(false)
+        NSNotificationCenter.defaultCenter().postNotificationName(kRealReachabilityStatusChanged, object: NSNumber(bool: false))
     }
     
     private func pingSuccessed() {
-            self.handleAllPingResultHandlers(true)
-            NSNotificationCenter.defaultCenter().postNotificationName(kRealReachabilityStatusChanged, object: NSNumber(bool: true))
+        self.pinger!.stop()
+        self.pinger = nil
+        self.handleAllPingResultHandlers(true)
+        NSNotificationCenter.defaultCenter().postNotificationName(kRealReachabilityStatusChanged, object: NSNumber(bool: true))
     }
     
     // MARK: - SimplePingDelegate
@@ -100,20 +108,14 @@ class NetworkObserver: NSObject, SimplePingDelegate {
     }
     
     func simplePing(pinger: SimplePing!, didReceivePingResponsePacket packet: NSData!) {
-        pinger.stop()
         self.pingSuccessed()
-        self.pinger = nil
     }
     
     func simplePing(pinger: SimplePing!, didFailToSendPacket packet: NSData!, error: NSError!) {
-        pinger.stop()
         self.pingFailed()
-        self.pinger = nil
     }
     
     func simplePing(pinger: SimplePing!, didFailWithError error: NSError!) {
-        pinger.stop()
         self.pingFailed()
-        self.pinger = nil
     }
 }
