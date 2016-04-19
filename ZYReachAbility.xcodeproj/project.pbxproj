@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F7681531CC480B700619256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7681521CC480B700619256 /* AppDelegate.swift */; };
+		5F7681551CC480B700619256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7681541CC480B700619256 /* ViewController.swift */; };
+		5F7681581CC480B700619256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7681561CC480B700619256 /* Main.storyboard */; };
+		5F76815A1CC480B700619256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7681591CC480B700619256 /* Assets.xcassets */; };
+		5F76815D1CC480B700619256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F76815B1CC480B700619256 /* LaunchScreen.storyboard */; };
+		5FCCFD851CC4F14B000EEB3C /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCFD841CC4F14B000EEB3C /* NetworkObserver.swift */; };
+		5FCCFD8B1CC4F17D000EEB3C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCFD881CC4F17D000EEB3C /* Reachability.m */; };
+		5FCCFD8C1CC4F17D000EEB3C /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCCFD8A1CC4F17D000EEB3C /* SimplePing.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F76814F1CC480B700619256 /* ZYReachAbility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYReachAbility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7681521CC480B700619256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F7681541CC480B700619256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F7681571CC480B700619256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F7681591CC480B700619256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F76815C1CC480B700619256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F76815E1CC480B700619256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7681641CC480D600619256 /* ZYReachAbility-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYReachAbility-Bridging-Header.h"; sourceTree = "<group>"; };
+		5FCCFD841CC4F14B000EEB3C /* NetworkObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
+		5FCCFD871CC4F17D000EEB3C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5FCCFD881CC4F17D000EEB3C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5FCCFD891CC4F17D000EEB3C /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		5FCCFD8A1CC4F17D000EEB3C /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F76814C1CC480B700619256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F7681461CC480B700619256 = {
+			isa = PBXGroup;
+			children = (
+				5F7681511CC480B700619256 /* ZYReachAbility */,
+				5F7681501CC480B700619256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F7681501CC480B700619256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F76814F1CC480B700619256 /* ZYReachAbility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F7681511CC480B700619256 /* ZYReachAbility */ = {
+			isa = PBXGroup;
+			children = (
+				5FCCFD861CC4F17D000EEB3C /* AppleAPI */,
+				5FCCFD841CC4F14B000EEB3C /* NetworkObserver.swift */,
+				5F7681521CC480B700619256 /* AppDelegate.swift */,
+				5F7681541CC480B700619256 /* ViewController.swift */,
+				5F7681561CC480B700619256 /* Main.storyboard */,
+				5FCCFD831CC4F0BC000EEB3C /* Others */,
+			);
+			path = ZYReachAbility;
+			sourceTree = "<group>";
+		};
+		5FCCFD831CC4F0BC000EEB3C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5F7681591CC480B700619256 /* Assets.xcassets */,
+				5F76815B1CC480B700619256 /* LaunchScreen.storyboard */,
+				5F76815E1CC480B700619256 /* Info.plist */,
+				5F7681641CC480D600619256 /* ZYReachAbility-Bridging-Header.h */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		5FCCFD861CC4F17D000EEB3C /* AppleAPI */ = {
+			isa = PBXGroup;
+			children = (
+				5FCCFD871CC4F17D000EEB3C /* Reachability.h */,
+				5FCCFD881CC4F17D000EEB3C /* Reachability.m */,
+				5FCCFD891CC4F17D000EEB3C /* SimplePing.h */,
+				5FCCFD8A1CC4F17D000EEB3C /* SimplePing.m */,
+			);
+			path = AppleAPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F76814E1CC480B700619256 /* ZYReachAbility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F7681611CC480B700619256 /* Build configuration list for PBXNativeTarget "ZYReachAbility" */;
+			buildPhases = (
+				5F76814B1CC480B700619256 /* Sources */,
+				5F76814C1CC480B700619256 /* Frameworks */,
+				5F76814D1CC480B700619256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYReachAbility;
+			productName = ZYReachAbility;
+			productReference = 5F76814F1CC480B700619256 /* ZYReachAbility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F7681471CC480B700619256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TZPT;
+				TargetAttributes = {
+					5F76814E1CC480B700619256 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5F76814A1CC480B700619256 /* Build configuration list for PBXProject "ZYReachAbility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F7681461CC480B700619256;
+			productRefGroup = 5F7681501CC480B700619256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F76814E1CC480B700619256 /* ZYReachAbility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F76814D1CC480B700619256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F76815D1CC480B700619256 /* LaunchScreen.storyboard in Resources */,
+				5F76815A1CC480B700619256 /* Assets.xcassets in Resources */,
+				5F7681581CC480B700619256 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F76814B1CC480B700619256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7681551CC480B700619256 /* ViewController.swift in Sources */,
+				5FCCFD851CC4F14B000EEB3C /* NetworkObserver.swift in Sources */,
+				5FCCFD8B1CC4F17D000EEB3C /* Reachability.m in Sources */,
+				5FCCFD8C1CC4F17D000EEB3C /* SimplePing.m in Sources */,
+				5F7681531CC480B700619256 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F7681561CC480B700619256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F7681571CC480B700619256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F76815B1CC480B700619256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F76815C1CC480B700619256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F76815F1CC480B700619256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F7681601CC480B700619256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F7681621CC480B700619256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ZYReachAbility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ZYReachAbility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZYReachAbility/ZYReachAbility-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F7681631CC480B700619256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ZYReachAbility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.ZYReachAbility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZYReachAbility/ZYReachAbility-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F76814A1CC480B700619256 /* Build configuration list for PBXProject "ZYReachAbility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F76815F1CC480B700619256 /* Debug */,
+				5F7681601CC480B700619256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F7681611CC480B700619256 /* Build configuration list for PBXNativeTarget "ZYReachAbility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7681621CC480B700619256 /* Debug */,
+				5F7681631CC480B700619256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F7681471CC480B700619256 /* Project object */;
+}
